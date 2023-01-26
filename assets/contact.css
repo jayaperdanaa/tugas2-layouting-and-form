@@ -8,21 +8,25 @@ body {
   font-family: "poppin", sans-serif;
 }
 .container {
+  border: 1px solid orangered;
+  background-color: rgb(253, 236, 230);
+  border-radius: 10px;
   max-width: 500px;
   width: 100%;
-  margin: auto;
+  margin: 30px auto;
   padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
 }
 input,
 select,
 textarea {
   display: block;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.082);
 }
 .form-item,
 .text-area,
@@ -33,6 +37,10 @@ button {
 h1 {
   text-align: center;
   font-weight: bolder;
+  color: orangered;
+}
+::placeholder {
+  padding-left: 20px;
 }
 form {
   margin-top: 50px;
@@ -45,15 +53,16 @@ label {
 
 textarea {
   resize: none;
+  padding-bottom: 50px;
 }
 .btn-submit {
   font-weight: 600;
-  float: right;
+  align-items: flex-end;
   border: none;
   border-radius: 30px;
   padding: 10px 30px;
   color: white;
-  background-color: rgb(1, 19, 39);
+  background-color: orangered;
   transition: 0.3 ease;
   cursor: pointer;
 }
